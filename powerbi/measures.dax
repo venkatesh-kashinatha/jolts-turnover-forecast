@@ -1,0 +1,50 @@
+// DAX measures for the JOLTS turnover report.
+// Tables: fact_jolts_rates, fact_quits_forecast, dim_industry, dim_measure, dim_date
+// Relationships (single direction, many-to-one):
+//   fact_jolts_rates[date]          -> dim_date[date]
+//   fact_jolts_rates[industry_code] -> dim_industry[industry_code]
+//   fact_jolts_rates[measure]       -> dim_measure[measure]
+//   fact_quits_forecast[date]       -> dim_date[date]
+//   fact_quits_forecast[industry_code] -> dim_industry[industry_code]
+// Load industry_code as Text so leading zeros ("000000") are kept.
+
+Rate = AVERAGE ( fact_jolts_rates[rate] )
+
+Openings Rate = CALCULATE ( [Rate], dim_measure[measure] = "JO" )
+Hires Rate    = CALCULATE ( [Rate], dim_measure[measure] = "HI" )
+Quits Rate    = CALCULATE ( [Rate], dim_measure[measure] = "QU" )
+Layoffs Rate  = CALCULATE ( [Rate], dim_measure[measure] = "LD" )
+
+// Average for the 2019 pre-pandemic baseline, ignoring the date slicer.
+Rate 2019 Avg =
+CALCULATE ( [Rate], REMOVEFILTERS ( dim_date ), dim_date[year] = 2019 )
+
+// Average for the latest 12 months that have data.
+Rate Latest 12M =
+VAR LastDate = CALCULATE ( MAX ( fact_jolts_rates[date] ), REMOVEFILTERS ( dim_date ) )
+RETURN
+    CALCULATE (
+        [Rate],
+        REMOVEFILTERS ( dim_date ),
+        DATESINPERIOD ( dim_date[date], LastDate, -12, MONTH )
+    )
+
+Change vs 2019 (pts) = [Rate Latest 12M] - [Rate 2019 Avg]
+Change vs 2019 % = DIVIDE ( [Change vs 2019 (pts)], [Rate 2019 Avg] )
+
+// Share of separations that are voluntary.
+Quits Share of Separations = DIVIDE ( [Quits Rate], [Quits Rate] + [Layoffs Rate] )
+
+// Above 1 means openings are posted faster than they are filled.
+Openings per Hire = DIVIDE ( [Openings Rate], [Hires Rate] )
+
+Rate YoY (pts) =
+[Rate] - CALCULATE ( [Rate], DATEADD ( dim_date[date], -12, MONTH ) )
+
+// Forecast measures, for a line chart that continues past the last actual month.
+Quits Forecast = AVERAGE ( fact_quits_forecast[forecast] )
+Quits Forecast Low 80 = AVERAGE ( fact_quits_forecast[lower_80] )
+Quits Forecast High 80 = AVERAGE ( fact_quits_forecast[upper_80] )
+
+Latest Month Label =
+"Data through " & FORMAT ( CALCULATE ( MAX ( fact_jolts_rates[date] ), REMOVEFILTERS () ), "mmmm yyyy" )
