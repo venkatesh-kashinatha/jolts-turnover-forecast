@@ -1,0 +1,14 @@
+industry_code,industry,industry_short,level
+000000,Total nonfarm,Total nonfarm,Roll-up
+100000,Total private,Total private,Roll-up
+110099,Mining and logging,Mining & logging,Sector
+230000,Construction,Construction,Sector
+300000,Manufacturing,Manufacturing,Sector
+400000,"Trade, transportation and utilities","Trade, transp. & util.",Sector
+510000,Information,Information,Sector
+510099,Financial activities,Financial activities,Sector
+540099,Professional and business services,Prof. & business svcs,Sector
+600000,Education and health services,Education & health,Sector
+700000,Leisure and hospitality,Leisure & hospitality,Sector
+810000,Other services,Other services,Sector
+900000,Government,Government,Sector
