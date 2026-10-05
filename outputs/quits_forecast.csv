@@ -1,0 +1,79 @@
+date,forecast,lower_80,upper_80,model,industry_code,industry,alpha,beta,phi
+2026-09-01,1.908,1.776,2.041,SES,000000,Total nonfarm,0.7,0.0,1.0
+2026-10-01,1.908,1.721,2.096,SES,000000,Total nonfarm,0.7,0.0,1.0
+2026-11-01,1.908,1.679,2.138,SES,000000,Total nonfarm,0.7,0.0,1.0
+2026-12-01,1.908,1.644,2.173,SES,000000,Total nonfarm,0.7,0.0,1.0
+2027-01-01,1.908,1.612,2.204,SES,000000,Total nonfarm,0.7,0.0,1.0
+2027-02-01,1.908,1.584,2.233,SES,000000,Total nonfarm,0.7,0.0,1.0
+2026-09-01,2.114,1.962,2.267,Holt damped,100000,Total private,0.45,0.25,0.85
+2026-10-01,2.107,1.891,2.323,Holt damped,100000,Total private,0.45,0.25,0.85
+2026-11-01,2.101,1.837,2.365,Holt damped,100000,Total private,0.45,0.25,0.85
+2026-12-01,2.096,1.791,2.401,Holt damped,100000,Total private,0.45,0.25,0.85
+2027-01-01,2.092,1.751,2.433,Holt damped,100000,Total private,0.45,0.25,0.85
+2027-02-01,2.088,1.714,2.462,Holt damped,100000,Total private,0.45,0.25,0.85
+2026-09-01,2.303,1.927,2.679,SES,110099,Mining and logging,0.35,0.0,1.0
+2026-10-01,2.303,1.772,2.834,SES,110099,Mining and logging,0.35,0.0,1.0
+2026-11-01,2.303,1.652,2.954,SES,110099,Mining and logging,0.35,0.0,1.0
+2026-12-01,2.303,1.551,3.054,SES,110099,Mining and logging,0.35,0.0,1.0
+2027-01-01,2.303,1.463,3.143,SES,110099,Mining and logging,0.35,0.0,1.0
+2027-02-01,2.303,1.383,3.223,SES,110099,Mining and logging,0.35,0.0,1.0
+2026-09-01,1.739,1.333,2.145,SES,230000,Construction,0.35,0.0,1.0
+2026-10-01,1.739,1.165,2.313,SES,230000,Construction,0.35,0.0,1.0
+2026-11-01,1.739,1.036,2.442,SES,230000,Construction,0.35,0.0,1.0
+2026-12-01,1.739,0.927,2.55,SES,230000,Construction,0.35,0.0,1.0
+2027-01-01,1.739,0.831,2.646,SES,230000,Construction,0.35,0.0,1.0
+2027-02-01,1.739,0.744,2.733,SES,230000,Construction,0.35,0.0,1.0
+2026-09-01,1.522,1.336,1.709,SES,300000,Manufacturing,0.55,0.0,1.0
+2026-10-01,1.522,1.258,1.786,SES,300000,Manufacturing,0.55,0.0,1.0
+2026-11-01,1.522,1.199,1.845,SES,300000,Manufacturing,0.55,0.0,1.0
+2026-12-01,1.522,1.149,1.895,SES,300000,Manufacturing,0.55,0.0,1.0
+2027-01-01,1.522,1.105,1.939,SES,300000,Manufacturing,0.55,0.0,1.0
+2027-02-01,1.522,1.065,1.979,SES,300000,Manufacturing,0.55,0.0,1.0
+2026-09-01,2.458,2.234,2.683,SES,400000,"Trade, transportation and utilities",0.6,0.0,1.0
+2026-10-01,2.458,2.141,2.776,SES,400000,"Trade, transportation and utilities",0.6,0.0,1.0
+2026-11-01,2.458,2.07,2.847,SES,400000,"Trade, transportation and utilities",0.6,0.0,1.0
+2026-12-01,2.458,2.009,2.907,SES,400000,"Trade, transportation and utilities",0.6,0.0,1.0
+2027-01-01,2.458,1.956,2.96,SES,400000,"Trade, transportation and utilities",0.6,0.0,1.0
+2027-02-01,2.458,1.908,3.008,SES,400000,"Trade, transportation and utilities",0.6,0.0,1.0
+2026-09-01,1.103,0.771,1.436,Holt damped,510000,Information,0.2,0.15,0.8
+2026-10-01,1.095,0.624,1.565,Holt damped,510000,Information,0.2,0.15,0.8
+2026-11-01,1.088,0.511,1.664,Holt damped,510000,Information,0.2,0.15,0.8
+2026-12-01,1.082,0.417,1.747,Holt damped,510000,Information,0.2,0.15,0.8
+2027-01-01,1.077,0.334,1.821,Holt damped,510000,Information,0.2,0.15,0.8
+2027-02-01,1.074,0.259,1.889,Holt damped,510000,Information,0.2,0.15,0.8
+2026-09-01,1.077,0.863,1.29,Holt damped,510099,Financial activities,0.25,0.5,0.8
+2026-10-01,1.053,0.751,1.354,Holt damped,510099,Financial activities,0.25,0.5,0.8
+2026-11-01,1.033,0.664,1.403,Holt damped,510099,Financial activities,0.25,0.5,0.8
+2026-12-01,1.018,0.592,1.444,Holt damped,510099,Financial activities,0.25,0.5,0.8
+2027-01-01,1.006,0.529,1.482,Holt damped,510099,Financial activities,0.25,0.5,0.8
+2027-02-01,0.996,0.474,1.518,Holt damped,510099,Financial activities,0.25,0.5,0.8
+2026-09-01,1.976,1.677,2.275,Holt damped,540099,Professional and business services,0.2,0.5,0.8
+2026-10-01,1.974,1.551,2.397,Holt damped,540099,Professional and business services,0.2,0.5,0.8
+2026-11-01,1.972,1.454,2.49,Holt damped,540099,Professional and business services,0.2,0.5,0.8
+2026-12-01,1.971,1.373,2.569,Holt damped,540099,Professional and business services,0.2,0.5,0.8
+2027-01-01,1.97,1.301,2.639,Holt damped,540099,Professional and business services,0.2,0.5,0.8
+2027-02-01,1.969,1.237,2.702,Holt damped,540099,Professional and business services,0.2,0.5,0.8
+2026-09-01,1.863,1.658,2.069,SES,600000,Education and health services,0.45,0.0,1.0
+2026-10-01,1.863,1.573,2.154,SES,600000,Education and health services,0.45,0.0,1.0
+2026-11-01,1.863,1.508,2.219,SES,600000,Education and health services,0.45,0.0,1.0
+2026-12-01,1.863,1.453,2.274,SES,600000,Education and health services,0.45,0.0,1.0
+2027-01-01,1.863,1.404,2.322,SES,600000,Education and health services,0.45,0.0,1.0
+2027-02-01,1.863,1.361,2.366,SES,600000,Education and health services,0.45,0.0,1.0
+2026-09-01,3.303,2.749,3.858,Holt damped,700000,Leisure and hospitality,0.9,0.05,0.8
+2026-10-01,3.288,2.503,4.072,Holt damped,700000,Leisure and hospitality,0.9,0.05,0.8
+2026-11-01,3.275,2.315,4.236,Holt damped,700000,Leisure and hospitality,0.9,0.05,0.8
+2026-12-01,3.265,2.156,4.375,Holt damped,700000,Leisure and hospitality,0.9,0.05,0.8
+2027-01-01,3.257,2.017,4.498,Holt damped,700000,Leisure and hospitality,0.9,0.05,0.8
+2027-02-01,3.251,1.893,4.61,Holt damped,700000,Leisure and hospitality,0.9,0.05,0.8
+2026-09-01,2.605,2.149,3.061,SES,810000,Other services,0.4,0.0,1.0
+2026-10-01,2.605,1.96,3.25,SES,810000,Other services,0.4,0.0,1.0
+2026-11-01,2.605,1.816,3.395,SES,810000,Other services,0.4,0.0,1.0
+2026-12-01,2.605,1.693,3.517,SES,810000,Other services,0.4,0.0,1.0
+2027-01-01,2.605,1.586,3.624,SES,810000,Other services,0.4,0.0,1.0
+2027-02-01,2.605,1.489,3.722,SES,810000,Other services,0.4,0.0,1.0
+2026-09-01,0.757,0.633,0.88,SES,900000,Government,0.4,0.0,1.0
+2026-10-01,0.757,0.582,0.931,SES,900000,Government,0.4,0.0,1.0
+2026-11-01,0.757,0.543,0.971,SES,900000,Government,0.4,0.0,1.0
+2026-12-01,0.757,0.51,1.004,SES,900000,Government,0.4,0.0,1.0
+2027-01-01,0.757,0.481,1.033,SES,900000,Government,0.4,0.0,1.0
+2027-02-01,0.757,0.454,1.059,SES,900000,Government,0.4,0.0,1.0

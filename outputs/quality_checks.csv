@@ -1,0 +1,8 @@
+check,failing
+Missing series,0
+Series with a different month count,0
+Gaps in a monthly series,0
+Missing values,0
+Negative rates,0
+Rates above 100%,0
+Unknown industry codes,0

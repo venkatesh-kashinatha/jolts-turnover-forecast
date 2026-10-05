@@ -1,0 +1,40 @@
+model,mae,rmse,mape_pct,industry_code,industry
+Naive (last value),0.05,0.0707,2.6316,000000,Total nonfarm
+SES,0.0585,0.077,3.069,000000,Total nonfarm
+Holt damped,0.1177,0.1279,6.1077,000000,Total nonfarm
+Naive (last value),0.0667,0.0913,3.1798,100000,Total private
+SES,0.0762,0.098,3.6286,100000,Total private
+Holt damped,0.0693,0.0918,3.2986,100000,Total private
+Naive (last value),0.1833,0.2582,7.8323,110099,Mining and logging
+SES,0.1833,0.2482,7.9432,110099,Mining and logging
+Holt damped,0.1844,0.235,8.2672,110099,Mining and logging
+Naive (last value),0.1417,0.1893,9.1947,230000,Construction
+SES,0.1083,0.1274,6.7513,230000,Construction
+Holt damped,0.1117,0.1286,6.8273,230000,Construction
+Naive (last value),0.1,0.1414,6.6815,300000,Manufacturing
+SES,0.0939,0.1185,6.402,300000,Manufacturing
+Holt damped,0.1071,0.1482,7.1832,300000,Manufacturing
+Naive (last value),0.3,0.3317,12.229,400000,"Trade, transportation and utilities"
+SES,0.2763,0.3077,11.2662,400000,"Trade, transportation and utilities"
+Holt damped,0.3386,0.3723,13.8138,400000,"Trade, transportation and utilities"
+Naive (last value),0.2083,0.2466,18.4001,510000,Information
+SES,0.2383,0.2654,22.2771,510000,Information
+Holt damped,0.2297,0.2572,21.2023,510000,Information
+Naive (last value),0.1583,0.1848,14.1558,510099,Financial activities
+SES,0.1878,0.2137,16.9015,510099,Financial activities
+Holt damped,0.1759,0.2019,15.8121,510099,Financial activities
+Naive (last value),0.4083,0.4463,20.3996,540099,Professional and business services
+SES,0.3332,0.3787,16.7808,540099,Professional and business services
+Holt damped,0.3132,0.362,15.8225,540099,Professional and business services
+Naive (last value),0.2583,0.2814,14.435,600000,Education and health services
+SES,0.1511,0.171,8.4435,600000,Education and health services
+Holt damped,0.1775,0.1958,9.8954,600000,Education and health services
+Naive (last value),0.4417,0.5204,11.4043,700000,Leisure and hospitality
+SES,0.4114,0.5001,11.8102,700000,Leisure and hospitality
+Holt damped,0.4101,0.4804,10.9009,700000,Leisure and hospitality
+Naive (last value),0.3833,0.4743,15.3742,810000,Other services
+SES,0.3383,0.4295,13.6405,810000,Other services
+Holt damped,0.6523,0.7414,26.458,810000,Other services
+Naive (last value),0.0417,0.0764,5.2381,900000,Government
+SES,0.0485,0.0761,6.0004,900000,Government
+Holt damped,0.0506,0.0763,6.2425,900000,Government

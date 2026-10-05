@@ -1,0 +1,12 @@
+industry_code,industry_short,hi_rate,jo_rate,ld_rate,qu_rate,quits_share_pct,openings_per_hire
+900000,Government,1.39,3.11,0.33,0.79,70.4,2.23
+510099,Financial activities,2.0,3.98,0.56,1.19,68.1,1.99
+600000,Education & health,2.86,5.14,0.74,1.84,71.3,1.8
+300000,Manufacturing,2.36,3.6,0.81,1.4,63.4,1.53
+810000,Other services,3.55,4.44,0.96,2.33,70.9,1.25
+510000,Information,2.64,3.28,1.6,1.19,42.7,1.24
+540099,Prof. & business svcs,4.4,5.33,2.03,2.09,50.7,1.21
+110099,Mining & logging,3.31,3.64,0.92,2.2,70.6,1.1
+400000,"Trade, transp. & util.",3.65,3.93,1.11,2.38,68.3,1.08
+700000,Leisure & hospitality,5.66,5.2,1.58,3.76,70.4,0.92
+230000,Construction,3.85,2.93,1.84,1.66,47.4,0.76
